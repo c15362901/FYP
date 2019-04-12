@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+        <include
+            layout="@layout/activity_map"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Morning"
+                android:textColor="#FF7F50"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:layout_marginTop="20dp"
+                android:id="@+id/morning_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp">
+
+            </ListView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Afternoon"
+                android:textColor="#DA70D6"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <ListView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/afternoon_lv"
+                android:layout_height="140dp"></ListView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Evening"
+                android:textColor="#008080"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:layout_marginTop="20dp"
+                android:id="@+id/evening_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"></ListView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            style="@android:style/Widget.Holo.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="SAVE"
+            android:textStyle="bold" />
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

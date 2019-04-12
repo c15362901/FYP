@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Nightlife"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="60dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/nightlife_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:orientation="horizontal">
+    </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Religious"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="60dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/religious_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView2"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Arts and Music"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="60dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/artsmusic_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView3"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Sports"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="60dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/sports_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView4"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Recreational"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="60dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/recreational_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView5"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>
